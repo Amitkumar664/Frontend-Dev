@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content h1{
+            color: violet;
+        }
+        .content{
+            flex: 3;
+            background-color: antiquewhite;
+            padding: 10px;
+        }
+        .aside{
+           flex: 1;
+            background-color: grey;
+            padding: 10px;
+        }
+        header, nav {
+            border: 2px solid black;
+            padding: 10px;
+       }
+       header{
+        background-color: skyblue;
+       }
+       nav h4 {
+        display: inline-block;
+        margin-right: 20px;
+        background-color: rgb(209, 88, 88);
+        padding-right: 1px;
+       }
+       .main-container {
+            display: flex;
+            gap: 20px; 
+        }
+        nav{
+            background-color: rgb(209, 88, 88);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Site Name</h1>
+    </header>
+
+    <nav>
+        <h4>Home</h4>
+        <h4>About</h4>
+        <h4>Services</h4>
+        <h4>Contact Us</h4>
+    </nav>
+
+    <div class="main-container">
+        <div class="content">
+            <h1>Page Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium dignissimos ratione ducimus explicabo facilis nobis facere quod natus quasi quas dolores, eum architecto est itaque saepe magnam labore doloremque!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique voluptatum dolor, molestias dolore, ex adipisci dignissimos consectetur tempora officiis repudiandae nemo dicta nostrum suscipit deleniti praesentium soluta! Reprehenderit, labore.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum ab ipsam rem officiis pariatur necessitatibus aut vel, accusamus quam iusto in? Hic aspernatur repudiandae earum nobis adipisci voluptatem cum explicabo!</p>
+        </div>
+        <div class="aside">
+            <h3>Aside Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, minima maxime. Sint quasi voluptates illo eaque beatae quos laborum ipsa explicabo. Ea itaque incidunt tempore consequatur, voluptatibus adipisci? Sit, dolore?</p>
+        </div>
+    </div>
+
+    
+</body>
+</html>
