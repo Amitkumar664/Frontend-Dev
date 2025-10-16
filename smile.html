@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smile Face</title>
+    <link rel="stylesheet" href="style_smile.css">
+    <style>
+    .face{
+        height: 400px;
+        width: 400px;
+        background-color: #ffa511;
+        border-radius: 50%;
+    }
+    .mouth{
+        width: 200px;
+        height: 75px;
+        background-color: brown;
+        border-radius: 0 0 50px 50px;
+        position: absolute;
+        top: 250px;
+        position: relative;
+        /* top: 300px; */
+        left: 100px;
+    }
+    .left_eye, .right_eye{
+        height:50px ;
+        width: 50px;
+        border-radius: 50%;
+        background-color: black;
+        display: inline-block;
+        position: absolute;
+        left: 100px;
+
+    }
+    .right_eye{
+        left: 250px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="face">
+        <div class="mouth"></div>
+        <div class="eyes">
+            <div class="left_eye"></div>
+            <div class="right_eye"> </div>
+        </div>
+    </div>
+</body>
+</html>
