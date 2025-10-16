@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+         body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color:black;
+            font-family: Arial, sans-serif;
+        }
+
+        .calculator {
+            display: flex;
+            flex-direction: column;
+            background-color:black;
+            padding: 20px;
+            border-radius: 10px;
+            
+        }
+
+        .display {
+            background-color:black;
+            color:white;
+            font-size: 2em;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: right;
+            margin-bottom: 20px;
+            min-width: 260px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .button {
+            flex: 1 1 20%;
+            min-width: 50px;
+            padding: 20px 0;
+            background-color: #2d2b2b;
+            color: white;
+            font-size: 1.5em;
+            border: none;
+            border-radius: 40px;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.2s;
+        }
+
+        .button:hover {
+            background-color: #888;
+        }
+
+        .button.operator {
+            background-color: #ff9500;
+        }
+/*
+        .button.operator:hover {
+            background-color: #ffa733;
+        }
+
+        .button.zero {
+            flex: 1 1 45%;
+        } */
+    </style> */
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <button class="button">Cross</button>
+            <button class="button">AC</button>
+            <button class="button">%</button>
+            <button class="button operator">/</button>
+
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">9</button>
+            <button class="button operator">*</button>
+
+            <button class="button">4</button>
+            <button class="button">5</button>
+            <button class="button">6</button>
+            <button class="button operator">-</button>
+
+            <button class="button">1</button>
+            <button class="button">2</button>
+            <button class="button">3</button>
+            <button class="button operator">+</button>
+
+            <button class="button">+/-</button>
+            <button class="button z">0</button>
+            <button class="button">DOT</button>
+            <button class="button operator">=</button>
+        </div>
+    </div>
+</body>
+</html>
