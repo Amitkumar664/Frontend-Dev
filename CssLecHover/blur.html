@@ -1,11 +1,91 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Filter Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #89f7fe, #66a6ff);
+            color: #222;
+            margin: 0;
+            text-align: center;
+        }
+
+        .image-section {
+            padding: 2rem;
+        }
+
+        .filtered-image {
+            width: 90%;
+            max-width: 900px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            filter: blur(4px) brightness(0.8) contrast(1.2);
+            /* transition: filter 0.5s ease, transform 0.4s ease; */
+        }
+
+        .filtered-image:hover {
+            filter: blur(0px) brightness(1.1) contrast(1);
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="image-section">
+            <img src="https://picsum.photos/900/500&quot; alt="Sample Image" class="filtered-image">
+        </section>
+    </main>
+
+
+</body>
+
+</html>
+
+Post by Aakash Vishwakarma
+Aakash Vishwakarma
+Created 5:28 PM5:28 PM
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .tooltip{
+            position: relative;
+            cursor: pointer;
+            display: inline-block;
+            border-bottom : 1px dotted;
+        }
+
+        .tooltiptext{
+            visibility: hidden;
+            position: absolute;
+            left:0%;
+            bottom : 90%;
+            background-color: black;
+            color: white;
+            width:100px;
+            text-align: center;
+            padding: 5px ;
+            border-radius: 5px;
+        }
+
+
+        .tooltip:hover .tooltiptext{
+            visibility: visible;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <h1>Tooltip Example</h1>
+    <div class="tooltip">Hover over me
+        <span class="tooltiptext">Some text</span>
+    </div>
 </body>
 </html>
