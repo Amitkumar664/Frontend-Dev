@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>webpage</title>
+    <title>WebPage</title>
     <style>
         *{
             margin: 0;
@@ -11,57 +11,131 @@
             box-sizing: border-box;
         }
         header{
-            background-color: lightblue;
-            font-size: 27px;
+            background-color: #CCD6E7 ;
+            font-size: 40px;
             font-weight: bold;
         }
+
         nav{
-            background-color: rgb(16, 0, 0);
-            padding: 10px 5px 10px 5px;
+            background-color: #333333;
+            padding: 10px 5px;
         }
+       
         nav a{
-            
-            color: white;
+            display: inline-block;
+            color:white;
             text-decoration: none;
-            font-size: 20px;
-            margin: 0 10px 0 10px;
             border-right: 1px solid white;
         }
+
         nav a:last-child{
-            border-right: none;
-        }
-        section{
-            display: inline-block;
-        }
-        aside{
-            display: inline-block;
-            background-color: lightblue;
-            width: 30%;
+            border: none;
         }
 
+        section{
+            float:left;
+            width:70%;
+        }
+
+        main{
+            border: 1px solid red;
+            height : 81vh;  
+        }
+
+        aside{
+            float:right;
+            background-color: #CCD6E7;
+            width: 28%;
+            height : 100%;
+        }
+
+        footer{
+            background-color: #CCD6E7 ;
+            text-align:center;
+            padding : 10px;
+        }
+
+        .mobile-menu{
+            /* display: none; */
+            visibility: hidden;
+        }
+
+        /* tablet view  */
+        @media (max-width : 768px) {
+            section, aside{
+                float:none;
+                width : 98%;
+                /* height : 200px; */
+                margin: 10px;
+                padding: 10px;
+            }
+
+            aside{
+                height : auto;
+            }
+        }
+
+        /* mobile-device */
+        @media (max-width : 400px){
+            section{
+                background-color: aqua;
+            }
+
+            aside{
+                background-color: gray;
+            }
+
+            .mobile-menu{
+                visibility: visible;
+                width: 100%;
+                background-color: gray;
+                padding: 10px;
+            }
+
+            .mobile-menu option{
+                background-color: white;
+            }
+
+            nav{
+                visibility:hidden;
+            }
+        }
     </style>
 </head>
 <body>
-    <header>
-        Site Name
-    </header>
+    <header>Site Name</header>
     <nav>
-        <a href="#">Home</a> |
-        <a href="#">About</a> |
-        <a href="#">Services</a> |
-        <a href="#">Contact</a>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Service</a>
+        <a href="">Contact us</a>
     </nav>
+
+    <!-- <div class="mobile-menu">
+        Menu
+    </div> -->
+
+    <select class="mobile-menu" name="" id="">
+        <option value="">Menu</option>
+        <option value="">Home</option>
+        <option value="">About</option>
+        <option value="">Service</option>
+        <option value="">Contact Us</option>
+    </select>
+
     <main>
         <section>
-            <h1>content heading </h1>
-            <!-- <p>This is a sample webpage created to demonstrate basic HTML structure and styling using CSS.</p> -->
+            <h2>Content Heading</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro repellat totam commodi ea quos voluptate alias, voluptatem, odio id quam similique dolorem a quisquam in nulla sed maxime, sapiente pariatur!
         </section>
         <aside>
-            <h1>Aside heading</h1>
+            <h2>Aside Heading</h2>  
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, maiores ducimus minima, reprehenderit non aspernatur dignissimos blanditiis provident tempora nostrum commodi? Reprehenderit pariatur consectetur aliquam recusandae consequatur, modi exercitationem dolore.
         </aside>
     </main>
-    <footer></footer>
-    
-    
+    <footer>
+        Copyright
+    </footer>
+
 </body>
 </html>
