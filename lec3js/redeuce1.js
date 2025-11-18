@@ -1,20 +1,16 @@
-const students=[
-    {name:'Alice', grade:"A"},
-    {name:'Bob', grade:"B"},
-    {name:'Charlie', grade:"A"}
+
+const students = [
+  { name: "PRINCE", grade: "A" },
+  { name: "AMAN", grade: "A" },
+  { name: "RAHUL", grade: "B" }
 ];
 
-// const Count = students.reduce((acc, curr) => {
-//     acc[curr.grade] = (acc[curr.grade] || 0) + 1;
-//     return acc;
-// }, {});
-
-const Count = students.reduce((acc, curr) => {
-    console.log("acc=",acc);
-    console.log("curr=",curr);
-    console.log("acc[curr.grade] || [] =", acc[curr.grade] || []);
-    console.log("-------------------------");
-    acc[curr.grade] = (acc[curr.grade] || []).push(curr);
-    return acc;
+const answer = students.reduce((acc, curr) => {
+  console.log("acc= ", acc);
+  console.log("curr=", curr);
+  console.log("acc[curr.grade] || [] =", acc[curr.grade] || []);
+  (acc[curr.grade] = acc[curr.grade] || []).push(curr);
+  return acc;
 }, {});
-console.log(Count);   // Output: { A: 2, B: 1 }
+
+console.log("Final Answer =", answer);
