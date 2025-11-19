@@ -29,4 +29,4 @@ console.log(applyCalculation(radii, getCircumference));
 console.log(applyCalculation(radii, getDiameter));
 
 
-//using Map
+
