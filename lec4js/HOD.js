@@ -1,3 +1,5 @@
+//higher order fxn
+
 const radii = [8, 9, 2, 3];
 
 const getCircumference = function(r) {
