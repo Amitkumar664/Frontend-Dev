@@ -6,7 +6,7 @@ const getCircumference = function(r) {
     return 2 * Math.PI * r;
 }
 
-const getDiameter = function(r) {
+const getDiameter = function(r) {5
     return 2 * r;
 }
 
