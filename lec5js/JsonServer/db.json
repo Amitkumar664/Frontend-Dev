@@ -1,0 +1,46 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100,
+      "image": "https://picsum.photos/200/300?random=1"
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200,
+      "image": "https://picsum.photos/200/300?random=2"
+    },
+    {
+      "id": "3",
+      "title": "another title",
+      "views": 500,
+      "image": "https://picsum.photos/200/300?random=3"
+    },
+    {
+      "id": "5",
+      "title": "another title",
+      "views": 600,
+      "image": "https://picsum.photos/200/300?random=5"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1",
+      "image": "https://picsum.photos/200/300?random=3"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1",
+      "image": "https://picsum.photos/200/300?random=4"
+    }
+  ],
+  "profile": {
+    "name": "typicode",
+    "image": "https://picsum.photos/200/300?random=5"
+  }
+}
