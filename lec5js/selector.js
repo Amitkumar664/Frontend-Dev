@@ -1,5 +1,5 @@
 $(document).ready(function () {
-$("p").css("color", "green");
+$("#p1").css("color", "green");
 $(".inputBox").css({
 "border": "2px solid blue",
 "padding": "5px"
