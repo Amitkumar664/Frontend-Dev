@@ -15,3 +15,4 @@ let object2 = {
 object2.__proto__ = object;
 
 object2.getIntro(); // Output: "amol belong to pune"
+
