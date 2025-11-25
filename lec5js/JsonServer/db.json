@@ -23,6 +23,19 @@
       "title": "another title",
       "views": 600,
       "image": "https://picsum.photos/200/300?random=5"
+    },
+    {
+      "id": "5",
+      "title": "another title",
+      "views": 600,
+      "image": "https://picsum.photos/200/300?random=5"
+    },
+    {
+      "id": "edb3"
+    },
+    {
+      "id": "438e",
+      "title": "Add your name in the body,i am amit"
     }
   ],
   "comments": [

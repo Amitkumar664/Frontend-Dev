@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Cards Example</title>
+    <style>
+        .card {
+            width: 250px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin: 10px;
+            background: #f9f9f9;
+        }
+
+        .card h3 {
+            margin: 0;
+        }
+
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>DOM Card Creator</h2>
+
+    <button id="addBtn">Add Card</button>
+
+    <div id="container"></div>
+
+    <script>
+        const btn = document.getElementById("addBtn");
+        const container = document.getElementById("container");
+
+        btn.addEventListener("click", function () {
+
+            const card = document.createElement("div");
+            const title = document.createElement("h3");
+            const desc = document.createElement("p");
+            const temp = document.createElement('h1');
+
+            card.className = "card";
+
+            title.textContent = "GLA";
+            desc.textContent = "This is a simple description";
+
+            temp.textContent = " this is test content";
+
+            card.appendChild(title);
+            card.appendChild(desc);
+            card.appendChild(temp);
+
+            container.appendChild(card);
+        });
+    </script>
+
+</body>
+</html>
