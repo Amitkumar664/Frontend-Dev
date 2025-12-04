@@ -1,0 +1,64 @@
+{
+  "students": [
+    {
+      "id": "3e56",
+      "name": "Anshu",
+      "section": "B",
+      "result": {
+        "math": 50,
+        "science": 80,
+        "english": 90
+      }
+    },
+    {
+      "id": "e53f",
+      "name": "Amit",
+      "section": "A",
+      "result": {
+        "math": 50,
+        "science": 80,
+        "english": 60
+      }
+    },
+    {
+      "id": "b8b0",
+      "name": "Aman",
+      "section": "C",
+      "result": {
+        "math": 80,
+        "science": 56,
+        "english": 90
+      }
+    },
+    {
+      "id": "434a",
+      "name": "Alpha",
+      "section": "A",
+      "result": {
+        "math": 50,
+        "science": 60,
+        "english": 80
+      }
+    },
+    {
+      "name": "Tim",
+      "section": "A",
+      "result": {
+        "math": 90,
+        "science": 20,
+        "english": 60
+      },
+      "id": "b6a6"
+    },
+    {
+      "id": "b041",
+      "name": "Amit",
+      "section": "A",
+      "result": {
+        "math": 50,
+        "science": 60,
+        "english": 50
+      }
+    }
+  ]
+}

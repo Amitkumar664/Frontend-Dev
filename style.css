@@ -1,0 +1,92 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+form input, form button {
+    padding: 8px;
+    font-size: 14px;
+}
+
+/* Save Student button styling */
+form button[type="submit"] {
+    background-color: #2ecc71; /* Green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+form button[type="submit"]:hover {
+    background-color: #27ae60; /* Darker green on hover */
+}
+
+/* Message box for success/error */
+#messageBox {
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+#messageBox.success { color: green; }
+#messageBox.error { color: red; }
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #34495e;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+/* General button styling */
+button {
+    cursor: pointer;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 2px;
+    color: white;
+}
+
+/* Edit button styles */
+button.edit-btn {
+    background-color: #3498db; /* Blue */
+}
+
+button.edit-btn:hover {
+    background-color: #2980b9; /* Darker blue */
+}
+
+/* Delete button styles */
+button.delete-btn {
+    background-color: #e74c3c; /* Red */
+}
+
+button.delete-btn:hover {
+    background-color: #c0392b; /* Darker red */
+}
